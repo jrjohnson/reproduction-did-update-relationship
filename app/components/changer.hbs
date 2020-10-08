@@ -1,0 +1,5 @@
+<button type="button" {{on "click" this.addComment}}>Add</button>
+<button type="button" {{on "click" this.clearComments}}>Clear</button>
+{{#if @post.comments}}
+  <button type="button" {{on "click" this.removeFirstComment}}>Remove First Comment</button>
+{{/if}}
